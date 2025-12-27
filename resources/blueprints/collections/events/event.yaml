@@ -1,0 +1,84 @@
+title: Evénement
+tabs:
+  main:
+    display: Principal
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              width: 50
+              validate:
+                - required
+          -
+            handle: subtitle
+            field:
+              type: text
+              display: Sous-titre
+              width: 50
+          -
+            handle: starts_at
+            field:
+              time_enabled: true
+              type: date
+              display: Début
+              width: 33
+          -
+            handle: ends_at
+            field:
+              time_enabled: true
+              type: date
+              display: Fin
+              width: 33
+          -
+            handle: djs
+            field:
+              collections:
+                - artists
+              type: entries
+              display: DJs
+              width: 50
+          -
+            handle: artists
+            field:
+              collections:
+                - artists
+              type: entries
+              display: Artistes
+              width: 50
+  images:
+    display: Visuels
+    sections:
+      -
+        display: 'Nouvelle section'
+        fields:
+          -
+            handle: cover
+            field:
+              container: assets
+              mode: grid
+              max_files: 1
+              type: assets
+              display: Couverture
+          -
+            handle: portrait
+            field:
+              container: assets
+              mode: grid
+              max_files: 1
+              type: assets
+              display: Portrait
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'

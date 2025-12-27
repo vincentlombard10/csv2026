@@ -1,0 +1,60 @@
+title: Salle
+tabs:
+  main:
+    display: Principal
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: subtitle
+            field:
+              type: text
+              display: Sous-titre
+          -
+            handle: artists
+            field:
+              collections:
+                - artists
+              type: entries
+              display: 'DJs / Artistes'
+          -
+            handle: content
+            field:
+              buttons:
+                - h2
+                - h3
+                - h4
+                - bold
+                - italic
+                - underline
+                - superscript
+                - subscript
+                - unorderedlist
+                - orderedlist
+                - removeformat
+                - quote
+                - anchor
+                - image
+                - table
+              container: assets
+              remove_empty_nodes: false
+              type: bard
+              display: Contenu
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'

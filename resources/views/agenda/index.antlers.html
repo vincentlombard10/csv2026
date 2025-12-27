@@ -1,0 +1,17 @@
+<h1 class="mb-8">Agenda</h1>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+    {{ collection:events }}
+    <div>
+        <div class="bg-neutral-900 p-4 rounded-xl mb-3">
+        <figure class="rounded-sm overflow-hidden">
+            {{ partial:components/picture :image="portrait.url" cover="true" lazy="true" sizes="(min-width: 768px) 33vw, 90vw" }}
+        </figure>
+        </div>
+        <div class="text-center">
+            <h2>{{ title }}</h2>
+            <div>{{ starts_at }}</div>
+            <div><a href="{{ permalink }}">Go</a></div>
+        </div>
+    </div>
+    {{ /collection:events }}
+</div>

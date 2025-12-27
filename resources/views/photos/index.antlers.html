@@ -1,0 +1,14 @@
+<h1 class="mb-8">Photos</h1>
+{{ collection:galleries }}
+<div class="text-white mb-8">
+    <h2 class="text-3xl font-bold">{{ title }}</h2>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-1 lg:gap-1.5 xl:gap-2">
+{{ photos }}
+{{ photo }}
+<figure class="rounded-sm overflow-hidden">
+{{ partial:components/picture :image="url" cover="true" lazy="true" sizes="(min-width: 768px) 33vw, 90vw" }}
+    </figure>
+    {{ /photos }}
+    </div>
+    </div>
+{{ /collection:galleries }}

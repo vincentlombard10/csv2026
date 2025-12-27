@@ -1,0 +1,15 @@
+title: Salles
+icon: collections
+template: rooms/single
+layout: layout
+revisions: false
+route: 'room/{slug}'
+sort_dir: asc
+date_behavior:
+  past: null
+  future: null
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
+    refresh: true

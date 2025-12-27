@@ -1,0 +1,12 @@
+<h1 class="mb-8">Rooms</h1>
+<div class="grid md:grid-cols-2 gap-4">
+    {{ collection:rooms }}
+        <div class="bg-neutral-950 ">
+            <div class="p-8 bottom-0 w-full h-full">
+                <h2>{{ title }}</h2>
+                <div>{{ content }}</div>
+                <div><a href="{{ permalink }}">{{ permalink }}</a></div>
+            </div>
+        </div>
+    {{ /collection:rooms }}
+</div>

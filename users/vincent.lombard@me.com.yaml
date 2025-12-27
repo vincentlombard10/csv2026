@@ -1,0 +1,27 @@
+name: 'VIncent Lombard'
+super: true
+id: c10c5ea4-7424-4266-a756-4b6842dc54b8
+password_hash: $2y$12$AGrVGfqdnvkVvdwYj2SYpeRJc9QRUosjM6TRMQox8uRoI07UfNFdG
+preferences:
+  locale: fr
+  collections:
+    events:
+      view: list
+      columns:
+        - title
+        - subtitle
+        - slug
+        - status
+        - djs
+        - portrait
+    rooms:
+      view: list
+    artists:
+      view: list
+    pages:
+      view: tree
+    galleries:
+      view: list
+    offers:
+      view: list
+  color_mode: light
