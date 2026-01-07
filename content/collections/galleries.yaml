@@ -5,9 +5,6 @@ layout: layout
 revisions: false
 route: 'galleries/{slug}'
 sort_dir: asc
-date_behavior:
-  past: null
-  future: null
 preview_targets:
   -
     label: Entry
