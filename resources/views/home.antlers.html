@@ -6,7 +6,7 @@
     <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-1 lg:gap-1.5 xl:gap-2">
         {{ collection:galleries limit="4" }}
     <a href="{{ url }}" class="text-white relative block rounded border-1 border-neutral-950 hover:border-brand transition duration-300 ease-in-out overflow-hidden">
-        <div class="absolute bg-gradient-to-t from-black/90 from-20% to-neutral-900/10 to-80% w-full h-full p-6 flex flex-col justify-end rounded overflow-hidden space-y-2">
+        <div class="absolute bg-gradient-to-t from-black/90 from-20% to-neutral-900/10 to-80% w-full h-full p-6 flex flex-col justify-end rounded overflow-hidden space-y-1">
             <h3 class="text-2xl font-bold leading-6">{{ title }}</h3>
             {{ if subtitle }}<div class="text-sm tracking-widest uppercase">{{ subtitle }}</div>{{ /if }}
             {{ if event_date }}<div class="text-sm font-semibold">{{ event_date | iso_format('dddd D MMMM Y') }}</div>{{ /if }}
