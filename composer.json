@@ -11,8 +11,13 @@
     ],
     "require": {
         "php": "^8.2",
+        "devrabiul/laravel-toaster-magic": "^1.5",
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.10.1",
+        "livewire/livewire": "^3.7",
+        "mailjet/laravel-mailjet": "^3.1",
+        "mailjet/mailjet-apiv3-php": "^1.6",
+        "mpdf/mpdf": "^8.2",
         "statamic/cms": "^6"
     },
     "require-dev": {

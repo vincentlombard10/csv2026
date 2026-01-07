@@ -1,14 +1,20 @@
-<h1 class="mb-8">Photos</h1>
-{{ collection:galleries }}
-<div class="text-white mb-8">
-    <h2 class="text-3xl font-bold">{{ title }}</h2>
-<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-1 lg:gap-1.5 xl:gap-2">
-{{ photos }}
-{{ photo }}
-<figure class="rounded-sm overflow-hidden">
-{{ partial:components/picture :image="url" cover="true" lazy="true" sizes="(min-width: 768px) 33vw, 90vw" }}
-    </figure>
-    {{ /photos }}
+<div class="px-8 xl:px-16 2xl:px-24 mx-auto mb-16">
+    <div class="flex lg:justify-center border-b-2 border-b-brand mb-4 flex-col py-6 lg:py-8">
+        <h1>{{ title }}</h1>
     </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-1 lg:gap-1.5 xl:gap-2">
+        {{ collection:galleries }}
+    <a href="{{ url }}" class="text-white relative block rounded border-1 border-neutral-950 hover:border-brand transition duration-300 ease-in-out overflow-hidden">
+        <div class="absolute bg-gradient-to-t from-black/90 from-20% to-neutral-900/10 to-80% w-full h-full p-6 flex flex-col justify-end rounded overflow-hidden">
+            <h3 class="text-2xl font-bold mb-2">{{ title }}</h3>
+            <div>Date</div>
+        </div>
+        {{ photos limit="1" }}
+    <figure class="">
+        {{ partial:components/picture :image="url" cover="true" lazy="true" sizes="(min-width: 768px) 33vw, 90vw" }}
+        </figure>
+            {{ /photos }}
+        </a>
+        {{ /collection:galleries }}
     </div>
-{{ /collection:galleries }}
+</div>

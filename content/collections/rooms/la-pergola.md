@@ -3,7 +3,8 @@ id: 46f776c2-519f-4c51-bf40-4b409e654798
 blueprint: room
 title: 'La Pergola'
 updated_by: c10c5ea4-7424-4266-a756-4b6842dc54b8
-updated_at: 1766353470
+updated_at: 1767445082
+thumbnail: room_pergola_thumb_1800_1200.jpg
 content:
   -
     type: heading

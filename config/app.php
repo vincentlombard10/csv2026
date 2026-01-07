@@ -123,4 +123,6 @@ return [
         'store' => env('APP_MAINTENANCE_STORE', 'file'),
     ],
 
+    'api_token' => env('API_TOKEN'),
+
 ];

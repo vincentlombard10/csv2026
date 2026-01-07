@@ -3,7 +3,8 @@ id: 7441fef6-5e7f-4e14-9e6c-017850fc95b0
 blueprint: room
 title: 'Le Grand Club'
 updated_by: c10c5ea4-7424-4266-a756-4b6842dc54b8
-updated_at: 1766353504
+updated_at: 1767445105
+thumbnail: room_grand_club_thumb_1800_1200.jpg
 content:
   -
     type: heading

@@ -1,27 +1,67 @@
+@import './_social.scss';
 @import "tailwindcss";
+@import '@splidejs/splide/css';
 @plugin "@tailwindcss/typography";
 @source "../views";
 @source "../../content";
 
+@theme {
+    --color-brand: #ffc880;
+    --color-facebook: #0866ff;
+    --color-instagram-from: #ff7a02;
+    --color-instagram-via: #ff135b;
+    --color-instagram-to: #d600be;
+}
+
+[x-cloak], [wire\:cloak] { display: none !important; }
+
+
+@layer utilities {
+    .scrollbar-hide {
+        /* Firefox */
+        scrollbar-width: none;
+
+        /* IE & Edge */
+        -ms-overflow-style: none;
+    }
+
+    .scrollbar-hide::-webkit-scrollbar {
+        /* Chrome, Safari */
+        display: none;
+    }
+}
+
+
+
+
 body {
     @apply text-neutral-100 leading-6;
 }
-p {
-    @apply mb-5;
-}
-h1 {
-    @apply text-white text-4xl lg:text-6xl font-bold;
-    color: #ffc880;
-}
-h2 {
-    @apply text-white text-3xl lg:text-3xl font-bold mb-3;
-}
-h3 {
-    @apply text-2xl lg:text-2xl font-semibold;
-    color: #ffc880;
+@layer base {
+    h1 {
+        @apply text-white text-5xl lg:text-6xl font-bold;
+        color: #ffc880;
+    }
+    h2 {
+        @apply text-white text-3xl lg:text-3xl font-bold mb-3;
+    }
+    h3 {
+        @apply text-2xl lg:text-2xl font-semibold;
+        @apply mb-4;
+        color: #ffc880;
+    }
+
+    p {
+        @apply mb-4;
+    }
 }
 #logo {
     background-image: url('../../public/logo/logo-w.svg');
     background-position: center center;
     background-repeat: no-repeat;
+    background-size: 12rem;
+}
+
+@view-transition {
+    navigation: auto;
 }

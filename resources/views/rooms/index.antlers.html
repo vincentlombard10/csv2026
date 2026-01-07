@@ -1,12 +1,33 @@
-<h1 class="mb-8">Rooms</h1>
-<div class="grid md:grid-cols-2 gap-4">
-    {{ collection:rooms }}
-        <div class="bg-neutral-950 ">
-            <div class="p-8 bottom-0 w-full h-full">
-                <h2>{{ title }}</h2>
-                <div>{{ content }}</div>
-                <div><a href="{{ permalink }}">{{ permalink }}</a></div>
-            </div>
+<div class="px-8 xl:px-16 2xl:px-24 mx-auto mb-16">
+    <div class="flex lg:justify-center border-b-2 border-b-brand mb-4 flex-col py-6 lg:py-8">
+        <h1>{{ title }}</h1>
+    </div>
+    <div class="grid md:grid-cols-2 gap-4">
+        {{ collection:rooms }}
+    <div class="group relative rounded overflow-hidden">
+        <div class="group">
+            {{ thumbnail }}
+            <figure class="rounded-xl overflow-hidden">
+            {{ partial:components/picture :image="url" cover="true" lazy="true" sizes="(min-width: 768px) 33vw, 90vw" }}
+            </figure>
+            {{ /thumbnail }}
         </div>
-    {{ /collection:rooms }}
+            <div class=" absolute inset-0 w-full bottom-0 bg-neutral-900/50 flex flex-col justify-end p-4 lg:p-8">
+                <h2>{{ title }}</h2>
+                {{ if subtitle }}
+                <h3 class="text-sm uppercase tracking-widest">subtitle</h3>
+                {{ /if }}
+                <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto
+                    assumenda cumque esse ex facere magni obcaecati quam ut velit!</p>
+                <div>
+                    <span class="inline-block bg-transparent text-brand border-1 border-brand px-4 py-2 rounded-full uppercase text-xs font-medium tracking-widest group-hover:bg-brand group-hover:text-black transition duration-100 shadow">Discover</span>
+
+                </div>
+            </div>
+            <a href="{{ url }}"
+               class="text-white absolute inset-0 block rounded-xl"></a>
+
+        </div>
+        {{ /collection:rooms }}
+    </div>
 </div>

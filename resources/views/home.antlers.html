@@ -1,6 +1,22 @@
-<h2>Dernières photos</h2>
-{{ collection:galleries }}
-<div>
-    <h3>{{ title }}</h3>
+<div class="mb-8">
+    {{ partial:home.partials.featured }}
 </div>
-{{ /collection:galleries }}
+<div class="px-8 xl:px-16 2xl:px-24 mx-auto mb-16">
+    <h2>Galleries</h2>
+    <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-1 lg:gap-1.5 xl:gap-2">
+        {{ collection:galleries limit="4" }}
+    <a href="{{ url }}" class="text-white relative block rounded border-1 border-neutral-950 hover:border-brand transition duration-300 ease-in-out overflow-hidden">
+        <div class="absolute bg-gradient-to-t from-black/90 from-20% to-neutral-900/10 to-80% w-full h-full p-6 flex flex-col justify-end rounded overflow-hidden">
+            <h3 class="text-2xl font-bold mb-1">{{ title }}</h3>
+            <div>Date</div>
+        </div>
+        {{ photos limit="1" }}
+    <figure class="">
+        {{ partial:components/picture :image="url" cover="true" lazy="true" sizes="(min-width: 768px) 33vw, 90vw" }}
+        </figure>
+            {{ /photos }}
+        </a>
+        {{ /collection:galleries }}
+    </div>
+</div>
+

@@ -1,0 +1,22 @@
+<div id="splide" class="splide w-full">
+    <div class="splide__track">
+        <ul class="splide__list">
+            {{ collection:featured }}
+        <li class="splide__slide">
+        <div class=" bg-neutral-900 rounded-lg">
+            {{ slide_desktop }}
+            <figure class="rounded-sm overflow-hidden hidden md:block">
+                {{ partial:components/picture :image="url" cover="true" lazy="true" }}
+            </figure>
+            {{ /slide_desktop }}
+            {{ slide_mobile }}
+        <figure class="rounded-sm md:hidden">
+            {{ partial:components.picture :image="url" cover="true" lazy="true" }}
+            </figure>
+                {{ /slide_mobile }}
+            </div>
+            </li>
+            {{ /collection:featured }}
+        </ul>
+    </div>
+</div>

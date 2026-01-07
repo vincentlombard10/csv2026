@@ -1,8 +1,9 @@
 title: 'Galeries Photos'
 icon: collections
-template: default
+template: photos/single
 layout: layout
 revisions: false
+route: 'galleries/{slug}'
 sort_dir: asc
 date_behavior:
   past: null

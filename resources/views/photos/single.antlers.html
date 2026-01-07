@@ -1,0 +1,17 @@
+<div class="px-8 xl:px-16 2xl:px-24 mx-auto mb-16">
+    <div class="flex lg:justify-center border-b-2 border-b-brand mb-4 flex-col py-6 lg:py-8">
+        <div class="mb-4">
+            <h1 class="lg:mb-2">{{ title }}</h1>
+            <div class="text-lg lg:text-2xl font-bold">samedi 23 décembre 2025</div>
+        </div>
+        <a href="{{$ url()->previous() $}}" class="text-sm text-brand"><i class="ri-arrow-left-s-line"></i>Photos</a>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-1 lg:gap-1.5 xl:gap-2">
+        {{ photos }}
+        {{ photo }}
+        <figure class="rounded-sm overflow-hidden">
+            {{ partial:components/picture :image="url" cover="true" lazy="true" sizes="(min-width: 768px) 33vw, 90vw" }}
+        </figure>
+        {{ /photos }}
+    </div>
+</div>

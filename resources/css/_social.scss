@@ -1,0 +1,23 @@
+@layer components {
+    .social-icon {
+        @apply w-8 h-8 rounded-full -indent-[999em];
+        @apply bg-neutral-900;
+        @apply transition duration-100 ease-in-out;
+    }
+    .social-icon--facebook {
+        @apply hover:bg-facebook;
+        background-image: url('../../public/social/facebook.svg');
+    }
+    .social-icon--instagram {
+        @apply hover:bg-instagram-via;
+        background-image: url('../../public/social/instagram.svg');
+    }
+    .social-icon--snapchat {
+        @apply hover:bg-yellow-300;
+        background-image: url('../../public/social/snapchat.svg');
+    }
+    .social-icon--tiktok {
+        @apply bg-black;
+        background-image: url('../../public/social/tiktok.svg');
+    }
+}

@@ -47,6 +47,15 @@ tabs:
               remove_empty_nodes: false
               type: bard
               display: Contenu
+          -
+            handle: thumbnail
+            field:
+              container: assets
+              mode: grid
+              max_files: 1
+              min_files: 1
+              type: assets
+              display: Vignette
   sidebar:
     display: Sidebar
     sections:

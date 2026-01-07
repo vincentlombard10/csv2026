@@ -16,6 +16,11 @@ preferences:
         - portrait
     rooms:
       view: list
+      columns:
+        - title
+        - slug
+        - status
+        - thumbnail
     artists:
       view: list
     pages:
@@ -24,4 +29,12 @@ preferences:
       view: list
     offers:
       view: list
+    featured:
+      view: list
+      columns:
+        - title
+        - slug
+        - slide_desktop
+        - slide_mobile
+        - status
   color_mode: light

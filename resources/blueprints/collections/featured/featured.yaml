@@ -1,0 +1,47 @@
+title: 'A la une'
+tabs:
+  main:
+    display: Principal
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: slide_desktop
+            field:
+              container: assets
+              dynamic: slug
+              mode: grid
+              max_files: 1
+              min_files: 1
+              type: assets
+              display: 'Slide Desktop'
+              width: 50
+          -
+            handle: slide_mobile
+            field:
+              container: assets
+              dynamic: slug
+              mode: grid
+              max_files: 1
+              min_files: 1
+              type: assets
+              display: 'Slide mobile'
+              width: 50
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'

@@ -1,21 +1,18 @@
-<nav class="fixed top-0 left-0 w-[calc(100vw-0rem)] bg-neutral-950 z-50 lg:bg-neutral-950/90">
-    <div class="h-16 lg:h-20 xl:h-24 flex lg:grid lg:grid-cols-[12rem_auto_12rem] items-center px-8 xl:px-16 2xl:px-24">
+<nav class="fixed top-0 left-0 w-[calc(100vw-0rem)] bg-neutral-950 z-50 lg:bg-black/95">
+    <div class="h-20 xl:h-24 grid grid-cols-[12rem_auto_12rem] items-center px-8 xl:px-16 2xl:px-24">
 
-        <div id="logo" class="text-xl font-bold h-16 xl:h-24 w-48"></div>
-
+        <a id="logo" class="text-xl font-bold h-full block w-full" href="/"></a>
         <div class="w-full">
-            <div class="hidden lg:flex items-center justify-center w-full h-16 lg:h-20 xl:h-24">
+            <div class="hidden lg:flex items-center justify-center w-full h-20 xl:h-24">
                 {{ nav:top }}
-                    <a href="{{ permalink }}" class="text-white font-semibold text-sm px-6 h-16 leading-16">{{ title }}</a>
+                    <a href="{{ permalink }}"
+                       class="inline-block text-brand {{ if is_current }} text-white{{ /if }} font-semibold text-sm h-16 leading-16 px-4 xl:px-6">{{ title }}</a>
                 {{ /nav:top }}
             </div>
         </div>
 
         <div class="flex justify-end space-x-2">
-            <div class="text-white  w-8 h-8 hidden lg:flex text-xs justify-center items-center bg-blue-600 rounded-full">FB</div>
-            <div class="text-white bg-pink-600 w-8 h-8 hidden lg:flex text-xs justify-center items-center rounded-full">TT</div>
-            <div class="text-white bg-rose-600 w-8 h-8 hidden lg:flex text-xs justify-center items-center rounded-full">IG</div>
-            <div class="text-white bg-yellow-500 w-8 h-8 hidden lg:flex text-xs justify-center items-center rounded-full">SN</div>
+            {{ partial:partials.booking-form }}
             <button id="menu-btn" class="lg:hidden text-2xl text-white">☰</button>
         </div>
     </div>
@@ -31,7 +28,7 @@
                max-h-[calc(100vh-4rem)] overflow-y-auto py-4"
         >
             {{ nav:top }}
-                <a href="{{ permalink }}" class="block px-4 py-3 hover:bg-neutral-800 text-white text-center font-semibold text-lg">{{ title }}</a>
+                <a href="{{ permalink }}" class="block px-4 py-3 hover:bg-neutral-900 text-brand {{ if is_current }} text-white{{ /if }} text-center font-semibold text-lg">{{ title }}</a>
             {{ /nav:top }}
         </div>
     </div>
