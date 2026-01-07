@@ -44,6 +44,6 @@ photos:
   - 20251213_bb1y_d039.jpg
   - 20251213_bb1y_d040.jpg
 updated_by: c10c5ea4-7424-4266-a756-4b6842dc54b8
-updated_at: 1767812926
-event_date: '2025-12-12 23:00'
+updated_at: 1767814900
+event_date: '2025-12-13 23:00'
 ---

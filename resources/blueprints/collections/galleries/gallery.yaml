@@ -40,3 +40,4 @@ tabs:
             field:
               type: date
               display: Date
+              time_enabled: true
