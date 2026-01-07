@@ -29,5 +29,6 @@ photos:
   - 20250927_tanaworld_d024.jpg
   - 20250927_tanaworld_d025.jpg
 updated_by: c10c5ea4-7424-4266-a756-4b6842dc54b8
-updated_at: 1767352152
+updated_at: 1767812992
+event_date: '2025-09-26 22:00'
 ---

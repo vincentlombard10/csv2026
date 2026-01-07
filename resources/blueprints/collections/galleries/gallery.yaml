@@ -19,6 +19,11 @@ tabs:
               mode: grid
               type: assets
               display: Photos
+          -
+            handle: subtitle
+            field:
+              type: text
+              display: Sous-titre
   sidebar:
     display: Sidebar
     sections:
@@ -31,7 +36,7 @@ tabs:
               localizable: true
               validate: 'max:200'
           -
-            handle: date
+            handle: event_date
             field:
               type: date
               display: Date

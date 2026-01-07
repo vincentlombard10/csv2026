@@ -44,5 +44,6 @@ photos:
   - 20251129_salesgosses_d039.jpg
   - 20251129_salesgosses_d040.jpg
 updated_by: c10c5ea4-7424-4266-a756-4b6842dc54b8
-updated_at: 1766185112
+updated_at: 1767812968
+event_date: '2025-11-28 23:00'
 ---

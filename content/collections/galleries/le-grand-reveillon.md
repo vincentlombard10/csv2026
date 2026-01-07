@@ -31,5 +31,7 @@ photos:
   - 20251231_lgr2026_d029.jpg
   - 20251231_lgr2026_d030.jpg
 updated_by: c10c5ea4-7424-4266-a756-4b6842dc54b8
-updated_at: 1767352008
+updated_at: 1767812898
+date: '2026-01-06 23:00'
+event_date: '2025-12-30 23:00'
 ---

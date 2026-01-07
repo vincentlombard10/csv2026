@@ -44,5 +44,6 @@ photos:
   - 20251206_rednight_d003.jpg
   - 20251206_rednight_d002.jpg
 updated_by: c10c5ea4-7424-4266-a756-4b6842dc54b8
-updated_at: 1766185061
+updated_at: 1767812948
+event_date: '2025-12-05 23:00'
 ---
