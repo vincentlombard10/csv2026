@@ -10,7 +10,7 @@
             {{ if extension == 'svg' || extension == 'gif' }}
                 <img src="{{ url }}" alt="{{ alt }}"  class="w-full {{ class }}"/>
             {{ else }}
-                <source
+{{#                 <source
                     srcset="
                         {{ glide:image preset='xs-webp' }} 320w,
                         {{ glide:image preset='sm-webp' }} 480w,
@@ -20,7 +20,7 @@
                         {{ glide:image preset='2xl-webp' }} 1680w"
                     sizes="{{ sizes }}"
                     type="image/webp"
-                >
+                > #}}
                 <source
                     srcset="
                         {{ glide:image preset='xs' }} 320w,
