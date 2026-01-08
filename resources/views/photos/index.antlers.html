@@ -17,11 +17,11 @@
             <div class="text-sm font-semibold">{{ event_date | iso_format='dddd D MMMM Y' }}</div>
         {{ /if }}
     </div>
-{{#         {{ photos limit="1" }}
+        {{ photos limit="1" }}
         <figure class="aspect-3/2 bg-neutral-900">
-        {{ partial:components/picture :image="url" cover="true" lazy="true" sizes="(min-width: 768px) 33vw, 90vw" }}
+        {{ partial:components/picture :image="url" cover="true" lazy="false" sizes="(min-width: 768px) 33vw, 90vw" }}
         </figure>
-        {{ /photos }} #}}
+        {{ /photos }}
     </a>
         {{ /galleries }}
     </div>
