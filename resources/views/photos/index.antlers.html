@@ -19,12 +19,13 @@
     </div>
 {{ photos limit="1" }}
 <figure class="aspect-3/2 bg-neutral-900">
-{{ partial:components/picture
+    <img src="{{ url }}" alt="">
+{{# {{ partial:components/picture
 :image="url"
 cover="true"
 lazy="true"
 sizes="(min-width: 768px) 33vw, 90vw"
-}}
+}} #}}
 </figure>
 {{ /photos }}
     </a>
