@@ -6,12 +6,12 @@ on:
       - main
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Deploy via SFTP
         uses: appleboy/ssh-action@v1.0.0
@@ -21,4 +21,4 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd /home/pxaj6030/2026.celliersaintvincent.com
-            echo "OK"
+            echo "OKKK"
