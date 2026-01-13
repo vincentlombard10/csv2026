@@ -5,6 +5,7 @@ layout: layout
 revisions: false
 route: 'galleries/{slug}'
 sort_dir: asc
+listing: true
 preview_targets:
   -
     label: Entry

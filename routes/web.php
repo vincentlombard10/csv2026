@@ -8,6 +8,9 @@ use Mpdf\Mpdf;
 //    'title' => 'Example'
 // ]);
 
+Route::statamic('photos/{page?}', 'photos/index', ['title' => 'Photos']);
+
+
 Route::get('/pdf', function () {
     $mpdf = new Mpdf([
         'mode' => 'utf-8',
