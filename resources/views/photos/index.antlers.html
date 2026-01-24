@@ -2,7 +2,7 @@
     <div class="flex lg:justify-center border-b-2 border-b-brand mb-4 flex-col py-6 lg:py-8">
         <h1>{{ title }}</h1>
     </div>
-    {{ collection:galleries limit="6" as="galleries" sort="event_date:desc" }}
+    {{ collection:galleries limit="6" paginate="true" as="galleries" sort="event_date:desc" }}
 <div class="grid md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-1 lg:gap-1.5 xl:gap-2">
     {{ galleries }}
 <a href="{{ url }}"
@@ -33,7 +33,7 @@
 </div>
 
 <div class="flex justify-between">
-{{ paginate }}
+            {{ paginate }}
             <div>
                 {{ if prev_page }}<a href="{{ prev_page }}"
                                      class="text-brand text-xs uppercase font-semibold inline-block px-4 py-2 rounded-full border-1 border-brand hover:bg-brand hover:text-neutral-900 transition duration-200 ease-in-out"><i
