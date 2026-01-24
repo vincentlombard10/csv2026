@@ -20,5 +20,3 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd /home/pxaj6030/2026.celliersaintvincent.com
-            echo "OKKK"
