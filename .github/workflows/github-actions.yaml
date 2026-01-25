@@ -13,6 +13,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Debug SSH user
+          run: |
+            echo "USER=${{ secrets.SSH_USER }}"
+
       - name: Deploy to VPS
         uses: appleboy/ssh-action@v1.0.0
         with:
