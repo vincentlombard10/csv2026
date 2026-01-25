@@ -22,12 +22,12 @@ jobs:
 
       - name: Test SSH
         run: |
-          ssh deploy@${{ secrets.SSH_HOST }} "whoami"
+          ssh celliersaintvincent@${{ secrets.SSH_HOST }} "whoami"
 
       - name: Deploy
         run: |
           ssh deploy@${{ secrets.SSH_HOST }} "
-            cd /var/www/ton-projet &&
+            cd /home/celliersaintvincent &&
             git pull &&
             php artisan migrate --force
           "
