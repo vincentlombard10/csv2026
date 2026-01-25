@@ -1,4 +1,4 @@
-name: CI/CD vers serveur o2switch
+name: CI/CD vers serveur
 
 on:
   push:
@@ -17,7 +17,7 @@ jobs:
         uses: appleboy/ssh-action@v1.0.0
         with:
           host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USER }}
+          username: celliersaintvincent
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            echo "ok";
+            whoami
