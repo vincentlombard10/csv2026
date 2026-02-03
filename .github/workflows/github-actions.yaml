@@ -1,31 +1,15 @@
-name: Deploy Laravel to VPS
-
-on:
-  push:
-    branches:
-      - main
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
       - name: Setup SSH
-        uses: webfactory/ssh-agent@v0.7.0
-        with:
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-
-      - name: Deploy to VPS
         run: |
-          ssh csv2026@vincentlombard.fr "
-            cd /home/csv2026 &&
-            git fetch --all &&
-            git reset --hard origin/main &&
-            composer install --no-dev --optimize-autoloader &&
-            yarn install &&
-            yarn build &&
-            php artisan migrate --force
-          "
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
+
+      - name: Debug SSH
+        run: |
+          ssh -vvv ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "whoami"
