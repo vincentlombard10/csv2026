@@ -1,0 +1,67 @@
+{
+  "node_modules/remixicon/fonts/remixicon.eot": {
+    "file": "assets/remixicon-Dj-GCdWP.eot",
+    "src": "node_modules/remixicon/fonts/remixicon.eot"
+  },
+  "node_modules/remixicon/fonts/remixicon.svg": {
+    "file": "assets/remixicon-Cj6uv-K3.svg",
+    "src": "node_modules/remixicon/fonts/remixicon.svg"
+  },
+  "node_modules/remixicon/fonts/remixicon.ttf": {
+    "file": "assets/remixicon-Cr1pveRX.ttf",
+    "src": "node_modules/remixicon/fonts/remixicon.ttf"
+  },
+  "node_modules/remixicon/fonts/remixicon.woff": {
+    "file": "assets/remixicon-C6oSHjyR.woff",
+    "src": "node_modules/remixicon/fonts/remixicon.woff"
+  },
+  "node_modules/remixicon/fonts/remixicon.woff2": {
+    "file": "assets/remixicon-DMdG15mt.woff2",
+    "src": "node_modules/remixicon/fonts/remixicon.woff2"
+  },
+  "public/logo/logo-w.svg": {
+    "file": "assets/logo-w-rkJzgHQw.svg",
+    "src": "public/logo/logo-w.svg"
+  },
+  "public/social/facebook.svg": {
+    "file": "assets/facebook-Cj82EaOS.svg",
+    "src": "public/social/facebook.svg"
+  },
+  "public/social/instagram.svg": {
+    "file": "assets/instagram-BaFA-1F2.svg",
+    "src": "public/social/instagram.svg"
+  },
+  "public/social/snapchat.svg": {
+    "file": "assets/snapchat-DpzARrgs.svg",
+    "src": "public/social/snapchat.svg"
+  },
+  "public/social/tiktok.svg": {
+    "file": "assets/tiktok-vH0vqjMH.svg",
+    "src": "public/social/tiktok.svg"
+  },
+  "resources/css/site.css": {
+    "file": "assets/site-DeXw7kjM.css",
+    "src": "resources/css/site.css",
+    "isEntry": true,
+    "name": "site",
+    "names": [
+      "site.css"
+    ]
+  },
+  "resources/js/site.js": {
+    "file": "assets/site-CpcjOS0v.js",
+    "name": "site",
+    "src": "resources/js/site.js",
+    "isEntry": true,
+    "css": [
+      "assets/site-BKAMvyQc.css"
+    ],
+    "assets": [
+      "assets/remixicon-Dj-GCdWP.eot",
+      "assets/remixicon-DMdG15mt.woff2",
+      "assets/remixicon-C6oSHjyR.woff",
+      "assets/remixicon-Cr1pveRX.ttf",
+      "assets/remixicon-Cj6uv-K3.svg"
+    ]
+  }
+}
